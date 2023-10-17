@@ -1,0 +1,1169 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand&display=swap');
+*{
+    font-family: 'Khand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/*navbar CSS*/
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 9000;
+}
+.responsive{
+    display: none;
+}
+nav .logo{
+    display: flex;
+}
+nav .logo .fleche{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30PX;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: orangered;
+    color: #fff;
+    cursor: pointer;
+}
+nav .logo p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 25px;
+    list-style: none;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: orangered;
+    font-weight: bolder;
+    padding: 5px 8px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+/*navbar CSS*/
+
+/*banner CSS*/
+.banner{
+    height: 650px;
+    position: relative;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./images/pexels-julia-m-cameron-4144038.jpg") center center no-repeat fixed;
+    background-size: cover;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.left{
+    width: 36%;
+}
+.left .title{
+   font-size: 3rem;
+   font-weight: bolder;
+   color: #fff;
+}
+.left .title span{
+    text-transform: capitalize;
+}
+.left .text{
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.left .choix_pack{
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px 15px;
+    background-color: orangered;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 30%;
+    transition: 0.5s;
+}
+.left .choix_pack:hover{
+    background-color: #fff;
+}
+.left .choix_pack a{
+    text-decoration: none;
+    color: #fff;
+}
+.left .choix_pack a{
+    color: #fff;
+}
+.left .choix_pack a:hover{
+    color: orangered;
+}
+.right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    position: fixed;
+    right: 0;
+    top: 180px;
+    z-index: 9000;
+}
+.right .media_icon1 a{
+    color: #fff;
+}
+.right .media_icon1 a:hover{
+    color: orangered;
+}
+.right .media_icon a{
+    color: #fff;
+}
+.right .media_icon a:hover{
+    color: orangered;
+}
+.right .media_icon1{
+  height: 48px;
+  width: 48px;
+  background-color: orangered;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.right .media_icon1:hover{
+    background-color: #fff;
+    color: orangered;
+}
+.right .media_icon{
+  height: 48px;
+  width: 48px;
+  background-color: orangered;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.right .media_icon:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+/*banner CSS*/
+
+/*nos_packs CSS*/
+.nos_pack{
+    padding: 40px 150px;
+    height: 55px;
+    background-color: #fff;
+}
+.nos_pack .pack_text{
+    font-size: 1.1rem;
+}
+.nos_pack .title_pack{
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+/*nos_packs CSS*/
+
+/*presentation nos_packs CSS*/
+.presentation_packs{
+    height: 500px;
+    padding: 30px 120px;
+    background-color: #f0ecec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+}
+.presentation_packs .card{
+    position: relative;
+    width: 25%;
+    padding: 15px 50px;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius:15px;
+    height: 300px;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+.presentation_packs .card:hover{
+    position: relative;
+    width: 28%;
+    padding: 15px 50px;
+    background-color: orangered;
+    color: #fff;
+    border-radius:15px;
+    height: 320px;
+    margin: 0 10px;
+}
+.recommannde{
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #0730e4;
+    font-size: 10px;
+    color: #fff;
+}
+.presentation_packs .card .head_card{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+.presentation_packs .card .head_card .card_img{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.presentation_packs .card .head_card .card_prix{
+    width: 30%;
+}
+.presentation_packs .card .head_card .card_prix .ttre{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.presentation_packs .card .head_card .card_prix .arg{
+    font-size: 20px;
+}
+.presentation_packs .card .head_card .card_prix .arg span{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.presentation_packs hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+.presentation_packs .card_main ul li{
+    margin-top: 15px;
+    list-style: none;
+}
+.fa-check{
+    margin-right: 8px;
+}
+.presentation_packs .card_footer{
+    margin-top: 40px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 5px 30px;
+    background-color: #0730e4;
+    color: #fff;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.presentation_packs .card_footer:hover{
+    background-color: #fff;
+    color: orangered;
+}
+
+.presentation_packs hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin: 15px 0;
+}
+.green{
+    background-color: green;
+}
+#green{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(50deg);
+    border-radius: 10px;
+}
+.orange{
+    background-color: rgb(255, 170, 140);
+}
+#orange{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.blue{
+    background-color: blue;
+}
+#blue{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transform: rotate(50deg);
+    border-radius: 10px;
+}
+/*presentation nos_packs CSS*/
+
+/*pourquoi CSS*/
+.pourquoi{
+    position: relative;
+    padding: 0 120px;
+}
+.pourquoi .texr_pourq .mini_text{
+    font-size: 18px;
+}
+.pourquoi .texr_pourq .gr_titre{
+    font-weight: bolder;
+    font-size: 2rem;
+    width: 45%;
+}
+.pourquoi .card_service{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    justify-content: center;
+    gap: 10px 30px;
+    height: 400px;
+    position: relative;
+}
+.pourquoi .card_service .mini_card{
+    width: 26.5%;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pourquoi .card_service .mini_card .card_icon_ser{
+    width: 80px;
+    height: 80px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pourquoi .card_service .mini_card .card_title_ser{
+    font-size: 1.5rem;
+}
+.pourquoi .card_service .mini_card .cardmini_text{
+    font-size: 1.3rem;
+    text-align: center;
+}
+.essai .essayez{
+    display: flex;
+    flex-direction: column;
+    padding: 0 120px;
+    height: 90px; 
+    margin-top: 110px;  
+}
+.ess_ttre{
+    font-size: 16px;
+}
+.ess_mini_ttre{
+    font-size: 1.8rem;
+}
+.pourquoi .card_service .mini_card .fa{
+    font-size: 30px;
+    color: #fff;
+}
+/*pourquoi CSS*/
+
+/*formulaire CSS*/
+.formulaire{
+    position: relative;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.formulaire .left_part{
+    width: 40%;
+    
+}
+.list_deroulant{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.name_user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.name_user input{
+    width: 100%;
+    height: 10px;
+    padding: 8px;
+}
+.email_user{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.email_user input{
+    width: 100%;
+    height: 15px;
+    padding: 8px;
+}
+.list_deroulant2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select{
+    width: 60%;
+    height: 30px;
+    padding: 5px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+textarea{
+    width: 100%;
+    padding: 8px;
+}
+.accpte{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+.accpte span{
+    color: orangered;
+}
+.envoie input{
+    padding: 10px 25px;
+    color: #fff;
+    background-color: orangered;
+    border: 0;
+    font-size: 16px;
+    transition: 0.5s;
+    margin-bottom: 40px;
+}
+.envoie input:hover{
+    color: #fff;
+    background-color: rgb(199, 85, 43);   
+}
+/*formulaire CSS*/
+
+
+/*suivre CSS*/
+.suivre{
+    padding: 0 120px;
+    height: 50px;
+    background-color: #f0ecec;
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.suivre a{
+    margin-right: 10px;
+    color: black;
+}
+.fa-brands{
+    font-size: 25px;
+}
+/*suivre CSS*/
+
+/*footer CSS*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    background-color: orangered;
+    height: 150px;
+    color: #fff;
+}
+footer .gauche{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+footer .gauche p{
+    margin: 10px 0;
+    font-size: 16px;
+}
+footer .gauche h2{
+    margin: 0;
+    font-size: 20px;
+}
+.contact_2{
+    margin-top: -34px;
+}
+.droit {
+    display: flex;
+}
+.droit .fleche{
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30PX;
+    height: 30px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color:  #fff;
+    color: orangered;
+    cursor: pointer;
+}
+.droit p{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+/*footer CSS*/
+
+/*responsive CSS*/
+
+
+
+
+@media(max-width:364px){
+    /*navbar CSS*/
+    nav .logo{
+        margin-left: -60px;
+    }
+    nav ul{
+        display: none;
+    }
+    .responsive{
+        display: block;
+        margin-right: -10px;
+    }
+    /*navbar CSS*/
+
+        
+    /*banner CSS*/
+    .banner{
+        padding: 100px 10px 0 10px;
+        height: 500px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left .choix_pack{
+        width: 50%;
+    }
+    /*banner CSS*/
+
+    /*nos_packs CSS*/
+    .nos_pack{
+        padding: 40px 10px;
+    }
+    .nos_pack .pack_text{
+        font-size: 1rem;
+    }
+    .nos_pack .title_pack{
+        font-size: 1.5rem;
+    }
+    /*nos_packs CSS*/
+
+    /*presentation nos_packs CSS*/
+    .presentation_packs{
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+    #bro1{
+        border: 1px solid transparent;
+        border-radius: 15px;
+    }
+    #bro2{
+        border: 1px solid transparent;
+        border-radius:15px;
+    }
+    .presentation_packs .card{
+        position: relative;
+        width: 60%;
+        margin: 20px 10px;
+    }
+    .presentation_packs .card_footer{
+        padding: 5px 10px;
+        width: 80%;
+    }
+    .presentation_packs .card_2{
+        width: 80%;
+    }
+    .presentation_packs .card_footer_2{
+        padding: 5px 10px;
+        width: 60%;
+    }
+    .presentation_packs .card .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card_2 .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card:hover{
+        position: relative;
+        width: 70%;
+        padding: 15px 50px;
+        background-color: orangered;
+        color: #fff;
+        border-radius:15px;
+        height: 300px;
+        margin: 0 10px;
+    }
+    /*presentation nos_packs CSS*/
+
+        
+    /*pourquoi CSS*/
+    .pourquoi{
+        position: relative;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .pourquoi .texr_pourq .mini_text{
+        font-size: 14px;
+    }
+    .pourquoi .texr_pourq .gr_titre{
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .pourquoi .card_service{
+        gap: 10px;
+        height: 550px;
+    }
+    .pourquoi .card_service .mini_card{
+        width: 40%;
+        height: 160px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .pourquoi .card_service .mini_card .card_icon_ser{
+        width: 20px;
+        height: 20px;
+    }
+    .pourquoi .card_service .mini_card .card_title_ser{
+        font-size: 14px;
+    }
+    .pourquoi .card_service .mini_card .cardmini_text{
+        font-size: 14px;
+    }
+    .essai .essayez{
+        padding: 20px;
+        height: 90px; 
+        margin-top: -30px; 
+    }
+    .pourquoi .card_service .mini_card .fa{
+        font-size: 15px;
+        color: #fff;
+    }
+    /*pourquoi CSS*/
+
+        
+    /*formulaire CSS*/
+    .formulaire{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14x;
+    }
+    .formulaire .left_part{
+        width: 100%; 
+    }
+    .name_user input{
+        width: 90%;
+    }
+    .email_user input{
+        width: 90%;
+    }
+    select{
+        width: 60%;
+        height: 30px;
+        padding: 5px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .accpte{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*formulaire CSS*/
+
+        
+    /*suivre CSS*/
+    .suivre{
+        padding: 0 20px;
+        height: 40px;
+    }
+    .fa-brands{
+        font-size: 20px;
+    }
+    /*suivre CSS*/
+
+    /*footer CSS*/
+    footer{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    footer .gauche{
+        width: 90%;
+    }
+    footer .gauche p{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    footer .gauche h2{
+        margin: 0;
+        font-size: 16px;
+    }
+    .droit .fleche{
+        margin: 0 5px;
+        width: 20PX;
+        height: 20px;
+    }
+    .droit p{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media(max-width:480px){
+    /*navbar CSS*/
+    nav .logo{
+        margin-left: -60px;
+    }
+    nav ul{
+        display: none;
+    }
+    .responsive{
+        display: block;
+        margin-right: -10px;
+    }
+    /*navbar CSS*/
+
+        
+    /*banner CSS*/
+    .banner{
+        padding: 100px 20px 0 20px;
+        height: 500px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left .choix_pack{
+        width: 42%;
+    }
+    /*banner CSS*/
+
+    /*nos_packs CSS*/
+    .nos_pack{
+        padding: 40px 20px;
+    }
+    .nos_pack .pack_text{
+        font-size: 1rem;
+    }
+    .nos_pack .title_pack{
+        font-size: 2rem;
+    }
+    /*nos_packs CSS*/
+
+    /*presentation nos_packs CSS*/
+    .presentation_packs{
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+    #bro1{
+        border: 1px solid transparent;
+        border-radius: 15px;
+    }
+    #bro2{
+        border: 1px solid transparent;
+        border-radius:15px;
+    }
+    .presentation_packs .card{
+        position: relative;
+        width: 80%;
+        margin: 20px 20px;
+    }
+    .presentation_packs .card_footer{
+        padding: 5px 10px;
+        width: 60%;
+    }
+    .presentation_packs .card_2{
+        width: 80%;
+    }
+    .presentation_packs .card_footer_2{
+        padding: 5px 10px;
+        width: 60%;
+    }
+    .presentation_packs .card .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card_2 .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card:hover{
+        position: relative;
+        width: 90%;
+        padding: 15px 50px;
+        background-color: orangered;
+        color: #fff;
+        border-radius:15px;
+        height: 320px;
+        margin: 0 10px;
+    }
+    /*presentation nos_packs CSS*/
+
+        
+    /*pourquoi CSS*/
+    .pourquoi{
+        position: relative;
+        padding: 20px;
+    }
+    .pourquoi .texr_pourq .mini_text{
+        font-size: 16px;
+    }
+    .pourquoi .texr_pourq .gr_titre{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .pourquoi .card_service{
+        gap: 10px 20px;
+        height: 600px;
+    }
+    .pourquoi .card_service .mini_card{
+        width: 40%;
+        height: 170px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .pourquoi .card_service .mini_card .card_icon_ser{
+        width: 30px;
+        height: 30px;
+    }
+    .pourquoi .card_service .mini_card .card_title_ser{
+        font-size: 1rem;
+    }
+    .pourquoi .card_service .mini_card .cardmini_text{
+        font-size: 1rem;
+    }
+    .essai .essayez{
+        padding: 20px;
+        height: 90px; 
+        margin-top: -30px; 
+    }
+    .pourquoi .card_service .mini_card .fa{
+        font-size: 15px;
+        color: #fff;
+    }
+    /*pourquoi CSS*/
+
+        
+    /*formulaire CSS*/
+    .formulaire{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14x;
+    }
+    .formulaire .left_part{
+        width: 100%; 
+    }
+    .name_user input{
+        width: 90%;
+    }
+    .email_user input{
+        width: 90%;
+    }
+    select{
+        width: 60%;
+        height: 30px;
+        padding: 5px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .accpte{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*formulaire CSS*/
+
+        
+    /*suivre CSS*/
+    .suivre{
+        padding: 0 20px;
+        height: 40px;
+    }
+    .fa-brands{
+        font-size: 20px;
+    }
+    /*suivre CSS*/
+
+    /*footer CSS*/
+    footer{
+        padding: 20px;
+    }
+    footer .gauche{
+        width: 70%;
+    }
+    footer .gauche p{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    footer .gauche h2{
+        margin: 0;
+        font-size: 16px;
+    }
+    .droit .fleche{
+        margin: 0 5px;
+        width: 20PX;
+        height: 20px;
+    }
+    .droit p{
+        font-size: 1rem;
+    }
+
+}
+
+
+@media(max-width:768px){
+    /*navbar CSS*/
+    nav .logo{
+        margin-left: -60px;
+    }
+    nav ul{
+        display: none;
+    }
+    .responsive{
+        display: block;
+        margin-right: -10px;
+    }
+    /*navbar CSS*/
+
+        
+    /*banner CSS*/
+    .banner{
+        padding: 100px 20px 0 20px;
+        height: 500px;
+    }
+    .left{
+        width: 100%;
+    }
+    .left .choix_pack{
+        width: 50%;
+    }
+    /*banner CSS*/
+
+    /*nos_packs CSS*/
+    .nos_pack{
+        padding: 40px 20px;
+    }
+    .nos_pack .pack_text{
+        font-size: 1rem;
+    }
+    .nos_pack .title_pack{
+        font-size: 2rem;
+    }
+    /*nos_packs CSS*/
+
+    /*presentation nos_packs CSS*/
+    .presentation_packs{
+        padding: 30px 40px;
+        display: flex;
+        flex-direction: column;
+        height: 1100px;
+    }
+    #bro1{
+        border: 1px solid transparent;
+        border-radius: 15px;
+    }
+    #bro2{
+        border: 1px solid transparent;
+        border-radius:15px;
+    }
+    .presentation_packs .card{
+        position: relative;
+        width: 80%;
+        margin: 20px 20px;
+    }
+    .presentation_packs .card_footer{
+        padding: 5px 10px;
+        width: 80%;
+    }
+    .presentation_packs .card_2{
+        width: 80%;
+    }
+    .presentation_packs .card_footer_2{
+        padding: 5px 10px;
+        width: 100%;
+    }
+    .presentation_packs .card .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card_2 .head_card .card_img{
+        margin-left: -20px;
+    }
+    .presentation_packs .card:hover{
+        position: relative;
+        width: 90%;
+        padding: 15px 50px;
+        background-color: orangered;
+        color: #fff;
+        border-radius:15px;
+        height: 320px;
+        margin: 0 10px;
+    }
+    /*presentation nos_packs CSS*/
+
+        
+    /*pourquoi CSS*/
+    .pourquoi{
+        position: relative;
+        padding: 20px;
+    }
+    .pourquoi .texr_pourq .mini_text{
+        font-size: 16px;
+    }
+    .pourquoi .texr_pourq .gr_titre{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .pourquoi .card_service{
+        gap: 10px 20px;
+        height: 600px;
+    }
+    .pourquoi .card_service .mini_card{
+        width: 39%;
+        height: 170px;
+        background-color: #ccc;
+        padding: 10px;
+    }
+    .pourquoi .card_service .mini_card .card_icon_ser{
+        width: 30px;
+        height: 30px;
+    }
+    .pourquoi .card_service .mini_card .card_title_ser{
+        font-size: 14px;
+    }
+    .pourquoi .card_service .mini_card .cardmini_text{
+        font-size: 14px;
+    }
+    .essai .essayez{
+        padding: 20px;
+        height: 90px; 
+        margin-top: -30px; 
+    }
+    .pourquoi .card_service .mini_card .fa{
+        font-size: 15px;
+        color: #fff;
+    }
+    /*pourquoi CSS*/
+
+        
+    /*formulaire CSS*/
+    .formulaire{
+        position: relative;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        font-size: 14x;
+    }
+    .formulaire .left_part{
+        width: 100%; 
+    }
+    .name_user input{
+        width: 90%;
+    }
+    .email_user input{
+        width: 90%;
+    }
+    select{
+        width: 60%;
+        height: 30px;
+        padding: 5px;
+    }
+    textarea{
+        width: 90%;
+    }
+    .accpte{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*formulaire CSS*/
+
+        
+    /*suivre CSS*/
+    .suivre{
+        padding: 0 20px;
+        height: 40px;
+    }
+    .fa-brands{
+        font-size: 20px;
+    }
+    /*suivre CSS*/
+
+    /*footer CSS*/
+    footer{
+        padding: 20px;
+    }
+    footer .gauche{
+        width: 100%;
+    }
+    footer .gauche p{
+        margin: 5px 0;
+        font-size: 14px;
+    }
+    footer .gauche h2{
+        margin: 0;
+        font-size: 16px;
+    }
+    .droit .fleche{
+        margin: 0 5px;
+        width: 20PX;
+        height: 20px;
+    }
+    .droit p{
+        font-size: 1rem;
+    }
+
+}
+
+
+/*responsive CSS*/
